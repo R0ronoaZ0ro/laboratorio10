@@ -47,6 +47,7 @@ def aplicar_descuento(total: float, porcentaje: float) -> float:
     # FORZAR EL ERROR: devuelve negativo
     return -(total - (total * porcentaje / 100)) """
     
+    ## ISSUE CORREGIDO
     #esta es la version correcta que devuelve el total positivo
     """Aplica un porcentaje de descuento sobre el total."""
     if porcentaje < 0 or porcentaje > 100:
