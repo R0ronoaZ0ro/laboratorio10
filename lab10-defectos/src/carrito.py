@@ -42,14 +42,14 @@ def aplicar_descuento(total: float, porcentaje: float) -> float:
     return (total - (total * porcentaje / 100)) """
     
     #Version para simular el error que el profesor espera
-    if porcentaje < 0 or porcentaje > 100:
+    """ if porcentaje < 0 or porcentaje > 100:
         raise ValueError('El porcentaje debe estar entre 0 y 100.')
     # FORZAR EL ERROR: devuelve negativo
-    return -(total - (total * porcentaje / 100))
+    return -(total - (total * porcentaje / 100)) """
     
     #esta es la version correcta que devuelve el total positivo
     """Aplica un porcentaje de descuento sobre el total."""
-    """ if porcentaje < 0 or porcentaje > 100:
+    if porcentaje < 0 or porcentaje > 100:
         raise ValueError('El porcentaje debe estar entre 0 y 100.')
     
     total_con_descuento = total - (total * porcentaje / 100)
@@ -58,4 +58,4 @@ def aplicar_descuento(total: float, porcentaje: float) -> float:
     if total_con_descuento < 0:
         return 0.0
     
-    return total_con_descuento """
+    return total_con_descuento
